@@ -22,6 +22,11 @@ var app = angular.module('app', ['ui.router'])
                 url: '/q3',
                 templateUrl: 'views/q3.html',
                 controller: 'appController'
+            })
+            .state('q4', {
+                url: '/q4',
+                templateUrl: 'views/q4.html',
+                controller: 'appController'
             });
 
         $urlRouterProvider.otherwise('/');
