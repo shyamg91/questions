@@ -4,10 +4,25 @@ var app = angular.module('app', ['ui.router'])
         $stateProvider
         //*************** Login Routes ***********************//
             .state('overview', {
-            url: '/',
-            templateUrl: 'views/landing.html',
-            controller: 'appController'
-        });
+                url: '/',
+                templateUrl: 'views/landing.html',
+                controller: 'appController'
+            })
+            .state('q1', {
+                url: '/q1',
+                templateUrl: 'views/q1.html',
+                controller: 'appController'
+            })
+            .state('q2', {
+                url: '/q2',
+                templateUrl: 'views/q2.html',
+                controller: 'appController'
+            })
+            .state('q3', {
+                url: '/q3',
+                templateUrl: 'views/q3.html',
+                controller: 'appController'
+            });
 
         $urlRouterProvider.otherwise('/');
     }]);

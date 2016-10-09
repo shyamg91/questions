@@ -752,7 +752,10 @@ td, th {
 
 .pure-menu-horizontal {
     width: 100%;
-    white-space: nowrap
+    white-space: nowrap;
+    font-weight: 100;
+    font-size: 14px;
+    color: #8C94A4;
 }
 
 .pure-menu-horizontal .pure-menu-list {
